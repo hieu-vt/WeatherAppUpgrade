@@ -22,11 +22,11 @@ fun MainScreen(
                 BottomNavigationBar(navController = navController)
             }
         },
-        floatingActionButton = {
-            FloatingActionButton(onClick = {}) {
-                Icon(Icons.Filled.Home, "Home")
-            }
-        }
+//        floatingActionButton = {
+//            FloatingActionButton(onClick = {}) {
+//                Icon(Icons.Filled.Home, "Home")
+//            }
+//        }
     ) { innerPadding ->
         Box(
             modifier = Modifier.padding(

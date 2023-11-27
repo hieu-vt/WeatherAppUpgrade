@@ -22,7 +22,6 @@ import kotlinx.coroutines.launch
 @Composable
 fun HomeScreen () {
     Scaffold (modifier = Modifier.fillMaxSize()) {
-        val interactionSource = remember { MutableInteractionSource() }
         val items = remember {
             listOf("Man", "Woman", "Hieu")
         }

@@ -26,12 +26,12 @@ fun Navigations(navController: NavHostController) {
             ProfileScreen(navController)
         }
 
-        composable("${NavigationItem.DetailProfile.route}/{profile}",
-            arguments = listOf(navArgument(NavigationItem.DetailProfile.route){
+        composable(NavigationItem.DetailProfile.route,
+            arguments = listOf(navArgument("profile"){
                 type = NavType.StringType
             })
         ) { navBackStackEntry->
-            val profile = navBackStackEntry.arguments?.getString(NavigationItem.DetailProfile.route)?.let {
+            val profile = navBackStackEntry.arguments?.getString("profile")?.let {
                 Gson().fromJson(it, DetailProfile::class.java)
             }
 
