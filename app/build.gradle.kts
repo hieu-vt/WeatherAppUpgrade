@@ -49,6 +49,7 @@ android {
 }
 
 dependencies {
+    val nav_version = "2.7.5"
 
     implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
@@ -65,6 +66,12 @@ dependencies {
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
+
+    // Gson
+    implementation("com.google.code.gson:gson:2.9.1")
+
+    // Navigation
+    implementation("androidx.navigation:navigation-compose:$nav_version")
 
     //Dagger - Hilt
     implementation("com.google.dagger:hilt-android:2.48")
