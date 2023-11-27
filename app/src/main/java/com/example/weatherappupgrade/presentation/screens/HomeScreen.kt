@@ -2,7 +2,6 @@ package com.example.weatherappupgrade.presentation.screens
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
-import androidx.compose.foundation.interaction.MutableInteractionSource
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Add
@@ -12,8 +11,11 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
-import com.example.weatherappupgrade.presentation.componets.CustomTab
+import com.example.weatherappupgrade.R
+import com.example.weatherappupgrade.presentation.componets.Tabs.CustomTab
 import com.example.weatherappupgrade.presentation.ui.theme.Purple40
 import com.example.weatherappupgrade.presentation.ui.theme.WeatherAppUpgradeTheme
 import kotlinx.coroutines.launch
@@ -66,7 +68,7 @@ fun HomeScreen () {
                         BottomSheetDemo()
                     }
 
-                    Surface (modifier = Modifier.fillMaxWidth().height(200.dp).fillMaxWidth()) {
+                    Surface (modifier = Modifier.fillMaxWidth().height(100.dp).fillMaxWidth()) {
                         Box(modifier = Modifier.height(50.dp)){
                             CustomTab(
                                 selectedIndex = selectedIndex,
@@ -76,6 +78,16 @@ fun HomeScreen () {
                                 }
                             )
                         }
+                    }
+
+                    Surface (modifier = Modifier.fillMaxWidth().height(50.dp).fillMaxWidth()) {
+                       Column {
+                           Icon(
+                               imageVector = ImageVector.vectorResource(id = R.drawable.active_user_circle),
+                               contentDescription = "Active user",
+                               tint = Color.Yellow
+                           )
+                       }
                     }
                 }
             }
