@@ -35,7 +35,7 @@ fun Navigations(navController: NavHostController) {
                 Gson().fromJson(it, DetailProfile::class.java)
             }
 
-            DetailProfile(profile)
+            DetailProfile(navController, profile)
         }
     }
 }

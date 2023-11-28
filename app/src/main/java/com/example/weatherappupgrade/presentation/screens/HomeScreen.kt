@@ -85,7 +85,7 @@ fun HomeScreen () {
                            Icon(
                                imageVector = ImageVector.vectorResource(id = R.drawable.active_user_circle),
                                contentDescription = "Active user",
-                               tint = Color.Yellow
+                               tint = Color.Red
                            )
                        }
                     }
