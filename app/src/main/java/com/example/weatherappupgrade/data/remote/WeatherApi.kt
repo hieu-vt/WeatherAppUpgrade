@@ -1,4 +1,4 @@
-package com.example.weatherappupgrade.domain.data
+package com.example.weatherappupgrade.data.remote
 
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -8,5 +8,5 @@ interface WeatherApi {
     suspend fun getWeather(
         @Query("latitude") lat:Double,
         @Query("longitude") long:Double,
-    ) :WeatherDto
+    ) : WeatherDto
 }
