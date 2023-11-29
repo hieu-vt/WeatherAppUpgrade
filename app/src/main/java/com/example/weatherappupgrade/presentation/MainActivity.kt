@@ -16,10 +16,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
-import androidx.lifecycle.viewmodel.compose.viewModel
-import com.example.weatherappupgrade.presentation.model.WeatherViewModel
+import com.example.weatherappupgrade.presentation.modules.weather.model.WeatherViewModel
 import com.example.weatherappupgrade.presentation.modules.weather.components.WeatherCard
-import com.example.weatherappupgrade.presentation.navigation.BottomTab
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

@@ -1,16 +1,15 @@
 package com.example.weatherappupgrade.presentation.navigation
 
 import androidx.compose.runtime.Composable
-import androidx.compose.runtime.internal.composableLambda
 import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.weatherappupgrade.presentation.screens.DetailProfile
-import com.example.weatherappupgrade.presentation.screens.HistoryScreen
-import com.example.weatherappupgrade.presentation.screens.HomeScreen
-import com.example.weatherappupgrade.presentation.screens.ProfileScreen
+import com.example.weatherappupgrade.presentation.modules.profile.DetailProfile
+import com.example.weatherappupgrade.presentation.modules.history.HistoryScreen
+import com.example.weatherappupgrade.presentation.modules.home.HomeScreen
+import com.example.weatherappupgrade.presentation.modules.profile.ProfileScreen
 import com.google.gson.Gson
 
 @Composable

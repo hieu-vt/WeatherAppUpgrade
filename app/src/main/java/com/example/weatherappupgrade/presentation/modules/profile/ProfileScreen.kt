@@ -1,4 +1,4 @@
-package com.example.weatherappupgrade.presentation.screens
+package com.example.weatherappupgrade.presentation.modules.profile
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button

@@ -1,4 +1,4 @@
-package com.example.weatherappupgrade.presentation.screens
+package com.example.weatherappupgrade.presentation.modules.home
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background

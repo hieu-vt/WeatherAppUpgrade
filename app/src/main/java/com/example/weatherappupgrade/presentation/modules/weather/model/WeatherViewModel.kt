@@ -1,4 +1,4 @@
-package com.example.weatherappupgrade.presentation.model
+package com.example.weatherappupgrade.presentation.modules.weather.model
 
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -12,12 +12,12 @@ import com.example.weatherappupgrade.presentation.state.WeatherState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
 @HiltViewModel
 class WeatherViewModel @Inject constructor(
     private val repository: WeatherRepository,
     private val locationTracker: LocationTracker
 ): ViewModel() {
+
     var state by mutableStateOf(WeatherState())
         private set
     fun loadWeatherInfo(){
@@ -52,4 +52,5 @@ class WeatherViewModel @Inject constructor(
             }
         }
     }
+
 }
