@@ -53,7 +53,7 @@ class MainActivity : ComponentActivity() {
                         backgroundColor = Color.Blue
                     )
                     Spacer(modifier = Modifier.height(16.dp))
-//                    WeatherForecast(state = viewModel.state)
+//                  WeatherForecast(state = viewModel.state)
                 }
                 if(viewModel.state.isLoading) {
                     CircularProgressIndicator(

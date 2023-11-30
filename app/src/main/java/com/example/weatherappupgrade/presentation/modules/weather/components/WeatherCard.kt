@@ -30,7 +30,7 @@ fun WeatherCard(
             modifier = modifier.padding(16.dp).background(backgroundColor),
             shape = RoundedCornerShape(10.dp),
         ) {
-            Column (modifier = Modifier.fillMaxWidth().padding(16.dp)) {
+            Column (modifier = Modifier.fillMaxWidth().padding(16.dp), horizontalAlignment = Alignment.CenterHorizontally) {
                 Text(
                     text = "Today ${it.time.format(DateTimeFormatter.ofPattern("HH:mm"))}",
                     modifier = Modifier.align(alignment = Alignment.End),
