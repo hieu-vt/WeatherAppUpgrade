@@ -22,7 +22,7 @@ import com.example.weatherappupgrade.R
 fun CustomHeaderScreen (navController: NavHostController, title : String) {
     Row(
         verticalAlignment = Alignment.CenterVertically,
-        modifier = Modifier.height(50.dp).background(Color.White)
+        modifier = Modifier.fillMaxWidth().height(50.dp).background(Color.White)
     ) {
         Box (modifier = Modifier.fillMaxHeight()){
 

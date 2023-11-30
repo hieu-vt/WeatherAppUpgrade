@@ -10,7 +10,8 @@ enum class Screen {
     HOME,
     History,
     Profile,
-    DetailProfile
+    DetailProfile,
+    Weather
 }
 
 
@@ -22,5 +23,7 @@ sealed class BarNavigationItem(var route: String, val icon: ImageVector?, var ti
 
 sealed class NavigationItem(var route: String) {
     object DetailProfile : NavigationItem("${Screen.DetailProfile}/{profile}")
+
+    object Weather : NavigationItem(Screen.Weather.toString())
 }
 

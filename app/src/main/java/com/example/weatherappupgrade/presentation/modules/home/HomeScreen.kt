@@ -14,15 +14,17 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import com.example.weatherappupgrade.R
 import com.example.weatherappupgrade.presentation.componets.Tabs.CustomTab
+import com.example.weatherappupgrade.presentation.navigation.Screen
 import com.example.weatherappupgrade.presentation.ui.theme.Purple40
 import com.example.weatherappupgrade.presentation.ui.theme.WeatherAppUpgradeTheme
 import kotlinx.coroutines.launch
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
-fun HomeScreen () {
+fun HomeScreen (navController: NavHostController) {
     Scaffold (modifier = Modifier.fillMaxSize()) {
         val items = remember {
             listOf("Man", "Woman", "Hieu")
@@ -53,7 +55,9 @@ fun HomeScreen () {
                     Surface (modifier = Modifier.fillMaxWidth().size(60.dp)){
                         Row (modifier = Modifier.run { fillMaxSize().align(alignment = Alignment.CenterHorizontally).align(alignment = Alignment.End)}){
                             Column (modifier = Modifier.size(width = 120.dp, height = 45.dp)) {
-                                FilledButton(onClick = {})
+                                FilledButton(onClick = {
+                                    navController.navigate(Screen.Weather.toString())
+                                })
                             }
                             Column (modifier = Modifier.size(width = 120.dp, height = 45.dp)) {
                                 OutlinedButtonExample(onClick = {})

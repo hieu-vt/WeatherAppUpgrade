@@ -10,13 +10,14 @@ import com.example.weatherappupgrade.presentation.modules.profile.DetailProfile
 import com.example.weatherappupgrade.presentation.modules.history.HistoryScreen
 import com.example.weatherappupgrade.presentation.modules.home.HomeScreen
 import com.example.weatherappupgrade.presentation.modules.profile.ProfileScreen
+import com.example.weatherappupgrade.presentation.modules.weather.WeatherScreen
 import com.google.gson.Gson
 
 @Composable
 fun Navigations(navController: NavHostController) {
     NavHost(navController, startDestination = BarNavigationItem.Home.route) {
         composable(BarNavigationItem.Home.route) {
-            HomeScreen()
+            HomeScreen(navController)
         }
         composable(BarNavigationItem.History.route) {
             HistoryScreen()
@@ -35,6 +36,10 @@ fun Navigations(navController: NavHostController) {
             }
 
             DetailProfile(navController, profile)
+        }
+
+        composable(NavigationItem.Weather.route) {
+            WeatherScreen(navController)
         }
     }
 }
