@@ -8,7 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.weatherappupgrade.domain.location.LocationTracker
 import com.example.weatherappupgrade.domain.respository.WeatherRepository
 import com.example.weatherappupgrade.domain.util.Resource
-import com.example.weatherappupgrade.presentation.state.WeatherState
+import com.example.weatherappupgrade.presentation.modules.weather.state.WeatherState
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

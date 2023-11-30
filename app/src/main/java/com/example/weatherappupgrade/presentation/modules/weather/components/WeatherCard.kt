@@ -16,7 +16,7 @@ import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.weatherappupgrade.R
-import com.example.weatherappupgrade.presentation.state.WeatherState
+import com.example.weatherappupgrade.presentation.modules.weather.state.WeatherState
 import java.time.format.DateTimeFormatter
 
 @Composable

@@ -46,6 +46,7 @@ fun WeatherScreen(navController: NavHostController) {
 
         // Dispose the launcher when the composable is no longer in the composition
         onDispose {
+            println(viewModel.state)
             // Add any necessary cleanup code here
         }
     }
